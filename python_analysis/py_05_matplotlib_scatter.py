@@ -13,6 +13,7 @@ my_font = font_manager.FontProperties(fname="../myfont/msyh.ttf")
 # 设置图形大小
 plt.figure(figsize=(20,6),dpi=80)
 
+#使用scatter方法绘制散点图和之前绘制折线图一样
 plt.scatter(x_3,y_3,label="3月份")
 plt.scatter(x_10,y_10,label="10月份")
 
@@ -23,12 +24,12 @@ _xtick_labels += ["10月{}日".format(i-50) for i in x_10]
 plt.xticks(_x[::3],_xtick_labels[::3],fontproperties=my_font,rotation=45)
 
 # 添加图例
-plt.legend(loc="upper left",prop=my_font)
+plt.legend(prop=my_font,loc="upper left")
 
 # 添加描述信息
-plt.xlabel("时间")
-plt.ylabel("温度")
-plt.title("标题")
+plt.xlabel("时间",fontproperties=my_font)
+plt.ylabel("温度",fontproperties=my_font)
+plt.title("标题",fontproperties=my_font)
 
 # 展示
 plt.show()
