@@ -30,3 +30,4 @@ plt.title("票房对比图",fontproperties=my_font)
 #plt.savefig("./bar.png")
 
 plt.show()
+
