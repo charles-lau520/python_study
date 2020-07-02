@@ -24,7 +24,8 @@ print(np.round(num,2))
 
 
 
-# shape 数组的形状维度，对于矩阵，n 行 m 列
+# shape 了解数组的结构,数组的形状维度，对于矩阵，n 行 m 列
+
 t1 = np.arange(12)
 
 print(t1)
@@ -53,6 +54,8 @@ print(t4.reshape((3,4)))
 t5 = np.arange(24)
 
 # 2维数组，每组3行4列
+# reshape()可以对数组的结构进行改变
+# reshape()函数可以改变数组的形状，并且原始数据不发生变化
 print(t5.reshape((2,3,4)))
 
 print(t5.reshape((4,6)))
