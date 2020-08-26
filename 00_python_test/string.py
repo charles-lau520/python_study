@@ -22,3 +22,5 @@ print(b)
 c = "she is {0:4d} year old and {1:.1f}m hight".format(20,1.68)
 print(c)
 
+
+
